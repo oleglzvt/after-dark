@@ -6,12 +6,16 @@ let wordsDatabase = [
     'synchrophasotron',
     'sponge',
     'lemongrass',
-    'big bad frankenstein'
+    'big bad frankenstein',
+    'the bestest mouse in the world'
 ];
 let wordsSelection = [];
 
+let cardNumber = Math.floor(Math.random() * (999 - 1 + 1) + 1);
+$('.card-footer .card-number').text(cardNumber);
+
 function shuffle(database) {
-    let currentIndex = database.length,  randomIndex;
+;    let currentIndex = database.length,  randomIndex;
 
     // While there remain elements to shuffle.
     while (currentIndex > 0) {
@@ -48,8 +52,9 @@ $('.card').on('click', function() {
 
     setTimeout(function(){
         generateNewWords();
+        let cardNumber = Math.floor(Math.random() * (999 - 1 + 1) + 1);
+        $('.card-footer .card-number').text(cardNumber);
     }, 150)
-    
 
 });
 

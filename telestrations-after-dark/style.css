@@ -18,12 +18,14 @@ h2 span {
     font-size: 34px;
 }
 .card {
-    width: 220px;
+    width: 250px;
+    height: 450px;
     padding: 10px 20px 25px 20px;
     border-radius: 20px;
     margin: 100px auto;
     color: #fff;
     font-family: sans-serif;
+    position: relative;
 }
 .heading {
     display: flex;
@@ -62,8 +64,15 @@ h2 span {
     text-align: left;
     line-height: 1.5;
 }
+.dice {
+    margin: 7px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+}
 .dice img {
-    width: 45px;
+    width: 35px;
 }
 .dice-1,
 .dice-3,
@@ -74,6 +83,24 @@ h2 span {
 .dice-4,
 .dice-6 {
     transform: rotate(10deg);
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 2px solid #000;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* flip animation */
